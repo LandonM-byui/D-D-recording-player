@@ -1,0 +1,2 @@
+[functions.submit-recording]
+verify_jwt = false

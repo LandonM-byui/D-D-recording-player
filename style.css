@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: dark;
+  --ink: #211a16;
+  --ink-soft: #30231d;
+  --parchment: #eee0bf;
+  --parchment-dim: #cbb995;
+  --gold: #caa35c;
+  --gold-light: #e2c789;
+  --red: #8f3029;
+  --line: rgba(226, 199, 137, .32);
+  font-family: "Source Sans 3", Georgia, sans-serif;
+  background: var(--ink);
+  color: var(--parchment);
+  scroll-behavior: smooth;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 0; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible, audio:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 4px; }
+.skip-link { position: absolute; z-index: 5; top: .5rem; left: .5rem; padding: .7rem 1rem; color: var(--ink); background: var(--gold-light); transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+
+.site-header { border-bottom: 1px solid var(--line); background: #1a1411; }
+.header-inner { width: min(1120px, calc(100% - 3rem)); min-height: 76px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.wordmark { display: inline-flex; align-items: center; gap: .7rem; color: var(--gold-light); text-decoration: none; font-family: "IM Fell English SC", Georgia, serif; font-size: 1.05rem; line-height: 1.05; }
+.wordmark-mark { font-size: 1.7rem; }
+nav { display: flex; align-items: center; gap: clamp(1rem, 4vw, 2.75rem); }
+nav a { color: var(--parchment-dim); text-decoration: none; font-size: 1rem; }
+nav a:hover, .text-link:hover { color: white; }
+
+.intro { min-height: 440px; padding: clamp(3rem, 8vw, 6.5rem) max(1.5rem, calc((100% - 1120px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 3rem; overflow: hidden; background: radial-gradient(ellipse at 78% 45%, rgba(143, 48, 41, .36), transparent 37%), linear-gradient(120deg, #30231d, #211a16 66%); border-bottom: 1px solid var(--line); }
+.intro-content { max-width: 620px; }
+.eyebrow { margin: 0 0 .7rem; color: var(--gold); font-size: .8rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+h1, h2, h3 { font-family: "IM Fell English SC", Georgia, serif; font-weight: 400; }
+h1 { margin: 0; color: var(--parchment); font-size: clamp(2.5rem, 6vw, 5.3rem); line-height: .98; }
+h1 span { color: var(--gold-light); }
+.intro-copy { max-width: 540px; margin: 1.5rem 0; color: var(--parchment-dim); font-size: 1.15rem; line-height: 1.65; }
+.text-link { display: inline-block; color: var(--gold-light); text-decoration-thickness: 1px; text-underline-offset: .28em; }
+.text-link span { padding-left: .35rem; }
+.intro-seal { width: 230px; height: 230px; flex: 0 0 auto; display: grid; align-content: center; justify-items: center; gap: .5rem; border: 1px solid rgba(226,199,137,.54); border-radius: 50%; color: var(--gold-light); box-shadow: 0 0 0 10px rgba(202,163,92,.04), 0 0 0 20px rgba(202,163,92,.03), inset 0 0 35px rgba(143,48,41,.28); }
+.seal-orbit { font-size: .85rem; letter-spacing: .3em; }
+.seal-stone { color: #d2a653; font-size: 4.5rem; line-height: 1; text-shadow: 0 0 25px rgba(226,199,137,.4); }
+.seal-caption { color: var(--parchment-dim); font-family: "IM Fell English SC", Georgia, serif; font-size: .9rem; letter-spacing: .08em; text-align: center; }
+
+.listening-section { padding: clamp(3.5rem, 7vw, 6rem) max(1.5rem, calc((100% - 1120px) / 2)); background: #211a16; }
+.section-heading { margin-bottom: 2rem; }
+.section-heading h2, .about-section h2 { margin: 0; color: var(--parchment); font-size: clamp(2rem, 4vw, 3.2rem); }
+.section-heading > p:last-child { margin: .5rem 0 0; color: var(--parchment-dim); }
+.player-layout { display: grid; grid-template-columns: minmax(250px, .8fr) minmax(0, 1.2fr); gap: 1.5rem; align-items: start; }
+.player-controls { display: grid; gap: 1.25rem; }
+.field-group { display: grid; gap: .45rem; }
+label { color: var(--gold-light); font-weight: 700; }
+select { width: 100%; min-height: 48px; padding: .7rem 2.5rem .7rem .85rem; border: 1px solid var(--line); border-radius: 3px; background: #30231d; color: var(--parchment); font: inherit; font-size: 1rem; }
+select option { background: #30231d; color: var(--parchment); }
+.field-help { color: var(--parchment-dim); font-size: .9rem; }
+.audio-card, .session-card { border: 1px solid var(--line); border-radius: 4px; background: linear-gradient(145deg, #30231d, #261d18); }
+.audio-card { padding: 1rem; }
+.audio-title-row { display: flex; gap: .8rem; align-items: center; margin-bottom: 1rem; }
+.audio-icon { display: grid; width: 42px; height: 42px; flex: 0 0 auto; place-items: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--gold-light); font-size: 1.45rem; }
+.audio-label { margin: 0; color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.audio-session { margin: .1rem 0 0; overflow-wrap: anywhere; font-family: "IM Fell English SC", Georgia, serif; font-size: 1.2rem; }
+audio { display: block; width: 100%; min-width: 0; height: 42px; }
+.audio-note { margin: .65rem 0 0; color: var(--parchment-dim); font-size: .88rem; line-height: 1.45; }
+.session-card { min-width: 0; padding: clamp(1.25rem, 4vw, 2rem); border-top: 3px solid var(--gold); }
+.card-topline { display: flex; align-items: center; justify-content: space-between; padding-bottom: .8rem; border-bottom: 1px solid var(--line); color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.record-gem { color: var(--red); font-size: 1rem; }
+.session-number { margin: 1.25rem 0 .25rem; color: var(--gold); font-size: .8rem; font-weight: 700; letter-spacing: .16em; }
+.session-card h3 { margin: 0; color: var(--parchment); font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.1; overflow-wrap: anywhere; }
+.session-summary { margin: .9rem 0 1.5rem; color: var(--parchment-dim); line-height: 1.6; }
+.detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.detail-grid section { min-width: 0; }
+.detail-grid h4 { margin: 0; padding-bottom: .45rem; border-bottom: 1px solid var(--line); color: var(--gold-light); font-size: .95rem; }
+.detail-grid ul { margin: .55rem 0 0; padding-left: 1.15rem; color: var(--parchment); }
+.detail-grid li { margin: .25rem 0; overflow-wrap: anywhere; }
+.session-notes { margin: 1.5rem 0 0; padding-top: .85rem; border-top: 1px solid var(--line); color: var(--parchment-dim); font-size: .85rem; line-height: 1.5; }
+
+.submission-section { padding: clamp(3.5rem, 7vw, 6rem) max(1.5rem, calc((100% - 900px) / 2)); border-top: 1px solid var(--line); background: #261d18; }
+.submission-card { max-width: 900px; margin: 0 auto; padding: clamp(1.25rem, 4vw, 2rem); border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 4px; background: linear-gradient(145deg, #30231d, #211a16); }
+.submission-card[hidden] { display: none; }
+.form-intro { margin: 1rem 0 1.25rem; color: var(--parchment-dim); line-height: 1.55; }
+.submission-card label { display: block; }
+.submission-card input:not([type="file"]), .submission-card textarea { width: 100%; min-height: 46px; padding: .65rem .75rem; border: 1px solid var(--line); border-radius: 3px; background: #211a16; color: var(--parchment); font: inherit; font-size: 1rem; }
+.submission-card textarea { min-height: 7rem; resize: vertical; }
+.submission-card input[type="file"] { display: block; max-width: 100%; padding: .65rem 0; color: var(--parchment-dim); font: inherit; }
+.submission-card input[type="file"]::file-selector-button { margin-right: .75rem; padding: .5rem .75rem; border: 1px solid var(--gold); border-radius: 3px; background: #30231d; color: var(--gold-light); font: inherit; cursor: pointer; }
+.access-form { max-width: 480px; }
+.access-form > label { margin-bottom: .45rem; }
+.themed-button { min-height: 46px; margin-top: 1rem; padding: .65rem 1rem; border: 1px solid var(--gold); border-radius: 3px; background: var(--red); color: #fff4dc; font: inherit; font-weight: 700; cursor: pointer; }
+.themed-button:hover { background: #a33b32; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.form-wide { grid-column: 1 / -1; }
+.form-message { min-height: 1.3em; margin: .65rem 0 0; color: var(--gold-light); line-height: 1.45; }
+
+.about-section { padding: clamp(3rem, 6vw, 5rem) max(1.5rem, calc((100% - 760px) / 2)); border-top: 1px solid var(--line); background: #30231d; text-align: center; }
+.about-section > p:last-child { max-width: 650px; margin: .8rem auto 0; color: var(--parchment-dim); font-size: 1.05rem; line-height: 1.65; }
+.site-footer { padding: 1.75rem 1.5rem; border-top: 1px solid var(--line); background: #1a1411; text-align: center; }
+.footer-title { color: var(--gold-light); font-family: "IM Fell English SC", Georgia, serif; text-decoration: none; }
+.site-footer p { margin: .35rem 0 0; color: var(--parchment-dim); font-size: .9rem; }
+
+@media (max-width: 700px) {
+  .header-inner { width: calc(100% - 2rem); min-height: 68px; }
+  nav { flex-wrap: wrap; justify-content: flex-end; row-gap: .25rem; }
+  .intro { min-height: 0; gap: 1.5rem; }
+  .intro-seal { width: 145px; height: 145px; }
+  .seal-stone { font-size: 3rem; }
+  .seal-orbit { font-size: .65rem; }
+  .seal-caption { font-size: .75rem; }
+  .player-layout { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 420px) {
+  .header-inner { gap: .75rem; }
+  .wordmark { font-size: .9rem; }
+  nav { gap: .9rem; }
+  nav a { font-size: .92rem; }
+  .intro { padding-inline: 1.25rem; }
+  .intro-seal { display: none; }
+  .listening-section { padding-inline: 1.25rem; }
+  .detail-grid { grid-template-columns: minmax(0, 1fr); }
+  .session-card { padding: 1.15rem; }
+  .submission-section { padding-inline: 1.25rem; }
+  .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .form-wide { grid-column: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { scroll-behavior: auto; }
+}

@@ -42,12 +42,10 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |11/10/2026| 10:30 am | IM     | Added session Descriptions and fixed audio | 1 Hr        |
 |11/10/2026| 12:10 pm | TP     | Adding in the Profile information          | 1/2 Hr      |
 |11/11/2026| 9:00 am  | MTG    | Finishing out the sprint and reporting     | 1 Hr        |
-|11/11/2026| 9:00 am  | TP     | Helped with photos & fixed finding Journey | 1 Hr        |
+|11/11/2026| 9:00 am  | TP     | Helped with photos & fixed finding Journey | 1 1/2 Hr    |
 |11/11/2026| 7:10 pm  | IM     | Generated the function to accept sessions  | 1 1/2 Hr    |
 |11/12/2026| 11:00 pm | IM     | Adding in more sessions to the DB using web| 1/2 Hr      |
-| | | | | |
-| | | | | |
-| | | | | |
+|11/12/2026| 6:50 pm  | IM     | Feverishly getting the page to work on page| 1/2 Hr      |
 
 _Note: Add more rows as needed._
 
@@ -55,7 +53,7 @@ _Note: Add more rows as needed._
 
 |Categroy                       |Total Time (Hours:Minutes)|
 |-------------------------------|:------------------------:|
-|IM - Individual Module         |                          |
-|TP - Team Project              |                          |
-|MTG - Class Meetings           |                          |
-|**TOTAL**                      |                          |
+|IM - Individual Module         |          10:00           |
+|TP - Team Project              |          4:00            |
+|MTG - Class Meetings           |          4:00            |
+|**TOTAL**                      |         **18:00**        |

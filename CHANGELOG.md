@@ -2,6 +2,12 @@
 
 Record project changes here so future work (including the planned Supabase integration) has a concise implementation history.
 
+## 2026-11-12 — GitHub Pages asset paths and deployment
+
+- Configured Vite to generate asset URLs under `/D-D-recording-player/`, the repository's GitHub Pages project path.
+- Added a GitHub Actions workflow that builds the Vite app and deploys the `dist` artifact to Pages on pushes to `main`.
+- Documented the Pages source setting and the public Supabase Actions variables required during the build.
+
 ## 2026-11-11 — Supabase recording uploads
 
 - Replaced the hard-coded browser password with password verification through the `submit-recording` Supabase Edge Function.

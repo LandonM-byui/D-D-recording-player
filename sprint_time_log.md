@@ -44,7 +44,7 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |11/11/2026| 9:00 am  | MTG    | Finishing out the sprint and reporting     | 1 Hr        |
 |11/11/2026| 9:00 am  | TP     | Helped with photos & fixed finding Journey | 1 Hr        |
 |11/11/2026| 7:10 pm  | IM     | Generated the function to accept sessions  | 1 1/2 Hr    |
-| | | | | |
+|11/12/2026| 11:00 pm | IM     | Adding in more sessions to the DB using web| 1/2 Hr      |
 | | | | | |
 | | | | | |
 | | | | | |

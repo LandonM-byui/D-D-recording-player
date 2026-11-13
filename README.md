@@ -6,6 +6,10 @@ A responsive, single-page listening room for a group's Dungeons & Dragons campai
 
 Install dependencies with `npm install`, add the Supabase URL and publishable key to `.env.local` (see `.env.example`), then run `npm run dev`. Google Fonts are requested when internet access is available; local system font fallbacks are included.
 
+## Deploy to GitHub Pages
+
+The repository includes a GitHub Actions workflow that builds and publishes `dist` on pushes to `main`. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. Add the repository Actions variables `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` under **Settings → Secrets and variables → Actions → Variables**. These are the public Supabase URL and publishable key used by the website; do not add a service-role key. The Vite base path is configured for this repository's project Pages URL.
+
 ## Current behavior
 
 - Campaign choices are loaded from `public."Campaigns"`.
